@@ -1,0 +1,36 @@
+# ======================================================
+# AWS
+# ======================================================
+
+variable "aws_region" {
+  description = "provide the aws_region"
+  type        = string
+}
+
+# ======================================================
+# Tags
+# ======================================================
+
+variable "app_id" {
+  description = "provide an app-id"
+  type        = string
+}
+
+variable "environment" {
+  description = "provide some environment name"
+  type        = string
+}
+
+variable "notification_mail" {
+  description = "provide an email to send mails"
+  type        = string
+}
+
+# ======================================================
+# Module
+# ======================================================
+
+variable "number_of_images" {
+  type        = number
+  description = "number of images to keep in the ECR"
+}
